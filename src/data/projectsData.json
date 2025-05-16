@@ -1,0 +1,82 @@
+[
+  {
+    "title": "AI Web Scraper",
+    "description": "Python-based web scraper with Ollama integration for AI-powered data analysis",
+    "image": "https://github.com/KrishnaGupta0405/AiWebScrapper/blob/main/images/img1.png?raw=true",
+    "tags": ["ML", "Python", "Streamlit", "Langchain"],
+    "github": "https://github.com/KrishnaGupta0405/AiWebScrapper",
+    "demo": null
+  },
+  {
+    "title": "NewsMonkey",
+    "description": "Real-time news aggregation platform with customizable categories and sources",
+    "image": "https://github.com/KrishnaGupta0405/NewsMonkey/raw/main/img1.png",
+    "tags": ["WebD", "React", "Node.js"],
+    "github": "https://github.com/KrishnaGupta0405/NewsMonkey",
+    "demo": "https://newsmonkeybeta.netlify.app/"
+  },
+  {
+    "title": "iNoteBook",
+    "description": "Secure note-taking app with cloud sync and rich text editing",
+    "image": "https://github.com/KrishnaGupta0405/iNotebook/raw/main/img1.png",
+    "tags": ["WebD", "MERN", "MongoDB", "Bootstrap"],
+    "github": "https://github.com/KrishnaGupta0405/iNotebook",
+    "demo": null
+  },
+  {
+    "title": "Arohana – Cultural Fest Website",
+    "description": "Dynamic cultural fest website with modern UI components and animations",
+    "image": "https://placehold.co/600x400?text=Arohana",
+    "tags": ["WebD", "React", "Chakra UI", "TailwindCSS"],
+    "github": "https://github.com/KrishnaGupta0405/arohana",
+    "demo": "https://arohana.pgdavhyperion.in/"
+  },
+  {
+    "title": "Parikalan Website",
+    "description": "Modern tech society website with animated UI elements",
+    "image": "/images/parikalan.png",
+    "tags": ["WebD", "React", "TailwindCSS"],
+    "github": "https://github.com/KrishnaGupta0405/Portfolio_Website",
+    "demo": "https://melodious-klepon-5dbc31.netlify.app/"
+  },
+  {
+    "title": "Flappy Bird Enhanced",
+    "description": "AI-powered Flappy Bird clone implementing the NEAT algorithm",
+    "image": "https://placehold.co/600x400?text=Flappy+Bird",
+    "tags": ["Python", "AI"],
+    "github": "https://github.com/KrishnaGupta0405/FlappyBird",
+    "demo": null
+  },
+  {
+    "title": "House Price Prediction XGBOOST",
+    "description": "using XGBoost to find the house prices accroding to diffrent features of the house",
+    "image": "https://github.com/KrishnaGupta0405/MachineLearning/raw/main/Projects/House%20Price%20Prediction%20XGBOOST/Housing_Data_Visualization.png",
+    "tags": ["Python", "ML", "AI"],
+    "github": "https://github.com/KrishnaGupta0405/MachineLearning/tree/main/Projects/House%20Price%20Prediction%20XGBOOST",
+    "demo": null
+  },
+  {
+    "title": "Movie Recommendation System using Cosine similarity Algo",
+    "description": "using XGBoost to find the house prices accroding to diffrent features of the house",
+    "image": "https://github.com/KrishnaGupta0405/MachineLearning/raw/main/Projects/Movie%20Recommendation%20System%20Cosine%20SimilarityAlgorithm/Bar_Chart.png",
+    "tags": ["Python", "ML", "AI"],
+    "github": "https://github.com/KrishnaGupta0405/MachineLearning/tree/main/Projects/Movie%20Recommendation%20System%20Cosine%20SimilarityAlgorithm",
+    "demo": null
+  },
+  {
+    "title": "Diabetes Prediction using SVM",
+    "description": "Diabetes Prediction using Support Vector Machine Learning Algorithm",
+    "image": "https://placehold.co/400x400?text=Diabetes Prediction",
+    "tags": ["Python", "ML", "AI"],
+    "github": "https://github.com/KrishnaGupta0405/MachineLearning/tree/main/Projects/Diabetes%20Prediction%20SVM",
+    "demo": null
+  },
+  {
+    "title": "Sonar Data Classification using PCA & Logistic Regression",
+    "description": "Diabetes Prediction using Support Vector Machine Learning Algorithm",
+    "image": "https://github.com/KrishnaGupta0405/MachineLearning/raw/main/Projects/Rock%20vs.%20Mine%20Prediction%20Logistic%20Regression/RvsMimage.png",
+    "tags": ["Python", "ML", "AI"],
+    "github": "https://github.com/KrishnaGupta0405/MachineLearning/tree/main/Projects/Rock%20vs.%20Mine%20Prediction%20Logistic%20Regression",
+    "demo": null
+  }
+]

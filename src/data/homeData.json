@@ -1,0 +1,161 @@
+{
+  "hero": {
+    "name": "Krishna Gupta",
+    "title": "Student Developer",
+    "bio": "Passionate about building AI-powered applications and modern web experiences",
+    "socialLinks": {
+      "github": "https://github.com/KrishnaGupta0405",
+      "linkedin": "https://www.linkedin.com/in/krishna-gupta-739506254/",
+      "twitter": "https://x.com/TechnicalSkies",
+      "email": "KrishnaGupta0405@gmail.com"
+    }
+  },
+  "technologies": [
+    
+    {
+      "name": "React",
+      "type": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "type": "Frontend"
+    },
+    {
+      "name": "TailwindCSS",
+      "type": "Frontend"
+    },
+    {
+      "name": "JavaScript",
+      "type": "Language"
+    },
+    {
+      "name": "Node.js",
+      "type": "Backend"
+    },
+    {
+      "name": "MongoDB",
+      "type": "Backend"
+    },
+    {
+      "name": "Express",
+      "type": "Backend"
+    },
+    {
+      "name": "Firebase",
+      "type": "Backend"
+    },
+    {
+      "name": "Superbase",
+      "type": "Backend"
+    },
+    
+    {
+      "name": "Postman",
+      "type": "Backend"
+    },
+    {
+      "name": "ThunderClient",
+      "type": "Backend"
+    },
+    {
+      "name": "GitHub",
+      "type": "Tool"
+    },
+    {
+      "name": "MySQL",
+      "type": "Backend"
+    },
+    {
+      "name": "C++",
+      "type": "Tool"
+    },
+    {
+      "name": "Python",
+      "type": "Tool"
+    },
+    {
+      "name": "Streamlit",
+      "type": "Tool"
+    },
+    {
+      "name": "MicrosoftExcel",
+      "type": "Tool"
+    },
+    {
+      "name": "MicrosoftPowerPoint",
+      "type": "Tool"
+    },
+    {
+      "name": "MicrosoftWord",
+      "type": "Tool"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "🏆 Smart India Hackathon 2022",
+      "issuer": "SIH - Government of India",
+      "date": "Nov 2024",
+      "link": null
+    },
+    {
+      "title": "🌟 IYD Hackathon - Valmiki Ramayana",
+      "issuer": "International Youth Day Hackathon",
+      "date": "Aug 2024",
+      "link": null
+    },
+    {
+      "title": "🎯 Delhi Tourism Hackathon",
+      "issuer": "Delhi Government",
+      "date": "Sep 2024",
+      "link": null
+    }
+  ],
+  "education": [
+    {
+      "title": "B.Sc. Computer Science",
+      "issuer": "Delhi University",
+      "date": "2023 – Present",
+      "details": "Currently pursuing with focus on AI and Web Technologies"
+    },
+    {
+      "title": "Class 12 – C.B.S.E.",
+      "issuer": "Air Force Se. Sec. School, New Delhi",
+      "date": "2022 – 2023",
+      "details": "Secured 80.1% in CBSE board examinations"
+    },
+    {
+      "title": "Class 10 – C.B.S.E.",
+      "issuer": "Air Force Se. Sec. School, New Delhi",
+      "date": "2020 – 2021",
+      "details": "Secured 87.5% in CBSE board examinations"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "title": "AI Web Scraper",
+      "description": "Python-based web scraper with Ollama integration for AI-powered data analysis",
+      "image": "https://github.com/KrishnaGupta0405/AiWebScrapper/blob/main/images/img1.png?raw=true",
+      "tags": ["ML", "Python", "Streamlit"],
+      "github": "https://github.com/KrishnaGupta0405/AiWebScrapper",
+      "demo": null,
+      "status": "✅ Live"
+    },
+    {
+      "title": "NewsMonkey",
+      "description": "Real-time news aggregation platform with category filtering",
+      "image": "https://github.com/KrishnaGupta0405/NewsMonkey/blob/main/img1.png?raw=true",
+      "tags": ["React", "API", "Bootstrap"],
+      "demo": "https://newsmonkeybeta.netlify.app/",
+      "github": "https://github.com/KrishnaGupta0405/NewsMonkey",
+      "status": "✅ Live"
+    },
+    {
+      "title": "Arohana Fest",
+      "description": "Cultural fest website with modern UI components and animations",
+      "image": "https://placehold.co/600x400?text=Arohana",
+      "tags": ["React", "Chakra UI"],
+      "github": "https://github.com/KrishnaGupta0405/arohana",
+      "status": "✅ Live"
+    }
+  ]
+}
