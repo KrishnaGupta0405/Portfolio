@@ -132,6 +132,15 @@
   ],
   "featuredProjects": [
     {
+      "title": "House Price Prediction XGBOOST",
+      "description": "using XGBoost to find the house prices accroding to diffrent features of the house",
+      "image": "https://github.com/KrishnaGupta0405/MachineLearning/raw/main/Projects/House%20Price%20Prediction%20XGBOOST/Housing_Data_Visualization.png",
+      "tags": ["Python", "ML", "AI"],
+      "github": "https://github.com/KrishnaGupta0405/MachineLearning/tree/main/Projects/House%20Price%20Prediction%20XGBOOST",
+      "demo": null,
+      "status": "✅ Live"
+    },
+    {
       "title": "AI Web Scraper",
       "description": "Python-based web scraper with Ollama integration for AI-powered data analysis",
       "image": "https://github.com/KrishnaGupta0405/AiWebScrapper/blob/main/images/img1.png?raw=true",
@@ -147,14 +156,6 @@
       "tags": ["React", "API", "Bootstrap"],
       "demo": "https://newsmonkeybeta.netlify.app/",
       "github": "https://github.com/KrishnaGupta0405/NewsMonkey",
-      "status": "✅ Live"
-    },
-    {
-      "title": "Arohana Fest",
-      "description": "Cultural fest website with modern UI components and animations",
-      "image": "https://placehold.co/600x400?text=Arohana",
-      "tags": ["React", "Chakra UI"],
-      "github": "https://github.com/KrishnaGupta0405/arohana",
       "status": "✅ Live"
     }
   ]

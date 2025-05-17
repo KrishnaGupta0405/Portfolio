@@ -9,6 +9,8 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Footer from './components/Footer'
 
+//  TODO -> Try adding Retro grid (Magici UI) or sparkling grid (UI Beats.com) as background of homepage
+
 const App = () => {
   const [isDark, setIsDark] = useState(() => {
     // Check if user has a theme preference
@@ -34,13 +36,13 @@ const App = () => {
 
   return (
     <Router>
-  <div className="min-h-screen bg-background text-foreground relative">
-    {/* Decorative Left & Right Borders */}
-     {/* Left Vertical Border */}
-      <div className="fixed top-0 bottom-0 left-4 sm:left-16 md:left-24 lg:left-10 xl:left-60 border-l border-dashed border-2 z-40 pointer-events-none hidden lg:block" />
+      <div className="min-h-screen bg-background text-foreground relative">
+        {/* Decorative Left & Right Borders */}
+        {/* Left Vertical Border */}
+          <div className="fixed top-0 bottom-0 left-4 sm:left-16 md:left-24 lg:left-10 xl:left-60 border-l border-dashed border-2 z-40 pointer-events-none hidden lg:block" />
 
-      {/* Right Vertical Border */}
-      <div className="fixed top-0 bottom-0 right-4 sm:right-16 md:right-24 lg:right-10 xl:right-60 border-r border-dashed border-2 z-40 pointer-events-none hidden lg:block" />
+          {/* Right Vertical Border */}
+          <div className="fixed top-0 bottom-0 right-4 sm:right-16 md:right-24 lg:right-10 xl:right-60 border-r border-dashed border-2 z-40 pointer-events-none hidden lg:block" />
 
 
 
