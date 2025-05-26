@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
@@ -8,9 +8,19 @@ import { Github, Linkedin, Twitter, Mail, Download, ExternalLink, SparkleIcon } 
 import Section from '../components/Section'
 import TechStack from '../components/TechStack'
 import FadeIn from '../components/FadeIn'
-import homeData from '../data/homeData.json'
 
 const Home = () => {
+  const [homeData, setHomeData] = useState(null)
+
+  useEffect(() => {
+    fetch('/data/homeData.json')
+      .then(res => res.json())
+      .then(data => setHomeData(data))
+      .catch(err => console.error('Failed to load home data:', err))
+  }, [])
+
+  if (!homeData) return <div className="p-10 text-center">Loading...</div>
+
   const { hero, certifications, education, featuredProjects } = homeData
 
   return (
@@ -63,14 +73,14 @@ const Home = () => {
           </div>
           <div className="flex gap-4">
             <Button asChild>
-              <a href="public/Krishna_Gupta_CV_17May2025.pdf" download>
+              <a href="/Krishna_Gupta_CV_17May2025.pdf" download>
                 <Download className="mr-2 h-4 w-4" /> Download Resume
               </a>
             </Button>
 
             <Button asChild variant="outline">
               <a
-                href="public/Krishna_Gupta_CV_17May2025.pdf"
+                href="/Krishna_Gupta_CV_17May2025.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -119,17 +129,13 @@ const Home = () => {
                 </Card>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[850px]">
-                {/* <DialogHeader>
-                  <DialogTitle>{project.title}</DialogTitle>
-                  <DialogDescription>{project.description}</DialogDescription>
-                </DialogHeader> */}
                 <div className="mt-4 flex flex-col md:flex-row gap-6">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full md:w-1/2 rounded-lg object-cover"
                   />
-                  <div className="flex-1 ">
+                  <div className="flex-1">
                     <DialogTitle>{project.title}</DialogTitle>
                     <DialogDescription>{project.description}</DialogDescription>
                     <div className="flex flex-wrap gap-2 mb-4 mt-4">
@@ -180,7 +186,6 @@ const Home = () => {
         </div>
       </Section>
 
-
       {/* Certifications Section */}
       <Section
         title="Certifications & Awards"
@@ -192,19 +197,15 @@ const Home = () => {
           {certifications.map((cert, index) => (
             <FadeIn key={index} delay={index * 0.1}>
               <Card className="rounded-lg p-4 shadow-sm border bg-background/50 backdrop-blur flex relative">
-                {/* Left side: title and issuer */}
                 <div className="flex flex-col justify-center">
                   <h3 className="font-semibold text-sm md:text-base">{cert.title}</h3>
                   <p className="text-muted-foreground text-sm">{cert.issuer}</p>
                 </div>
-
-                {/* Right side: date positioned top-right */}
                 <p className="text-muted-foreground text-sm absolute top-4 right-4">{cert.date}</p>
               </Card>
             </FadeIn>
           ))}
-      </div>
-
+        </div>
       </Section>
 
       {/* Education Section */}
@@ -218,20 +219,16 @@ const Home = () => {
           {education.map((edu, index) => (
             <FadeIn key={index} delay={index * 0.1}>
               <Card className="rounded-lg p-4 shadow-sm border bg-background/50 backdrop-blur flex relative">
-                {/* Left side: title and issuer */}
                 <div className="flex flex-col justify-center">
                   <h3 className="font-semibold text-sm md:text-base">{edu.title}</h3>
                   <p className="text-muted-foreground text-sm">{edu.issuer}</p>
                 </div>
-
-                {/* Right side: date positioned top-right */}
                 <p className="text-muted-foreground text-sm absolute top-4 right-4">{edu.date}</p>
               </Card>
             </FadeIn>
           ))}
         </div>
       </Section>
-
     </main>
   )
 }

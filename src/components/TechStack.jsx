@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import homeData from '../data/homedata.json'; // ✅ Corrected path & filename
 
 // Icons
 import {
   SiReact, SiNextdotjs, SiNodedotjs, SiPostman, SiMongodb,
   SiJavascript, SiTypescript, SiRedux, SiTailwindcss,
-  SiGithub, SiFirebase, SiThunderstore, SiSupabase, SiExpress, SiStreamlit,  SiCplusplus, SiPython, SiMysql
+  SiGithub, SiFirebase, SiThunderstore, SiSupabase, SiExpress,
+  SiStreamlit, SiCplusplus, SiPython, SiMysql
 } from 'react-icons/si';
 
 // Mapping tech names to icons and colors
@@ -21,15 +21,12 @@ const iconMap = {
   MongoDB: { Icon: SiMongodb, color: 'text-green-500' },
   Firebase: { Icon: SiFirebase, color: 'text-amber-500' },
   Superbase: { Icon: SiSupabase, color: 'text-amber-500' },
-  // TypeScript: { Icon: SiTypescript, color: 'text-blue-600' },
-  // Redux: { Icon: SiRedux, color: 'text-purple-600' },
   GitHub: { Icon: SiGithub, color: 'text-slate-800 dark:text-slate-200' },
   Express: { Icon: SiExpress, color: 'text-slate-700 dark:text-slate-300' },
   Streamlit: { Icon: SiStreamlit, color: 'text-pink-500' },
   'C++': { Icon: SiCplusplus, color: 'text-blue-700' },
   Python: { Icon: SiPython, color: 'text-sky-500' },
   MySQL: { Icon: SiMysql, color: 'text-blue-600 dark:text-blue-300' },
-  
 };
 
 const container = {
@@ -53,16 +50,27 @@ const item = {
 };
 
 const TechStack = () => {
-  const technologies = (homeData?.technologies || [])
-    .map(tech => {
-      const mapped = iconMap[tech.name];
-      if (!mapped) return null;
-      return { ...tech, ...mapped };
-    })
-    .filter(Boolean); // remove nulls for unmatched icons
+  const [technologies, setTechnologies] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/homeData.json')
+      .then(res => res.json())
+      .then(data => {
+        const rawTech = data?.technologies || [];
+        const mappedTech = rawTech
+          .map(tech => {
+            const icon = iconMap[tech.name];
+            return icon ? { ...tech, ...icon } : null;
+          })
+          .filter(Boolean); // remove nulls
+        setTechnologies(mappedTech);
+      })
+      .catch(err => console.error('Failed to load technologies:', err));
+  }, []);
 
   return (
     <motion.div
+      key={technologies.length} // <- force re-render animation when loaded
       className="flex flex-wrap gap-6 justify-start"
       variants={container}
       initial="hidden"

@@ -64,21 +64,20 @@ const Projects = () => {
 
   // Load projects JSON on mount
   useEffect(() => {
-    fetch("/src/data/projectsData.json")
+    fetch("/data/projectsData.json")
       .then((res) => res.json())
       .then((data) => {
-        // Map your JSON to expected fields if needed or augment missing fields
         const formattedProjects = data.map((p, idx) => ({
           id: idx + 1,
           title: p.title,
           description: p.description,
-          fullDescription: p.description, // or add if you have more detailed text
+          fullDescription: p.description,
           image: p.image,
           tags: p.tags,
-          stack: p.tags, // since your JSON has tags but no stack, reuse tags or adjust accordingly
+          stack: p.tags,
           github: p.github,
           demo: p.demo,
-          createdAt: p.createdAt || "2024-01-01", // fallback date
+          createdAt: p.createdAt || "2024-01-01",
           lastUpdated: p.lastUpdated || "2024-01-01",
         }))
         setProjects(formattedProjects)
@@ -90,6 +89,7 @@ const Projects = () => {
         setIsLoading(false)
       })
   }, [])
+
 
   // Collect all tags dynamically from loaded projects
   const allTags = Array.from(new Set(projects.flatMap((project) => project.tags)))
@@ -130,7 +130,7 @@ const Projects = () => {
     <div className="max-w-7xl mx-auto px-4 py-8">
       
       {/* Filtering option */}
-      <div className="mb-8">
+      <div className="mb-8 mr-32 ml-32">
         <h1 className="text-3xl font-bold mb-4">All Projects</h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="flex flex-wrap gap-2">
@@ -165,7 +165,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid ml-32 mr-32 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {isLoading ? (
           Array(6)
             .fill(0)
