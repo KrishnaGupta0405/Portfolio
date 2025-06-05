@@ -130,7 +130,7 @@ const Projects = () => {
     <div className="max-w-7xl mx-auto px-4 py-8">
       
       {/* Filtering option */}
-      <div className="mb-8 mr-32 ml-32">
+      <div className="mb-8 lg:mr-32 lg:ml-32">
         <h1 className="text-3xl font-bold mb-4">All Projects</h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="flex flex-wrap gap-2">
@@ -165,7 +165,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid ml-32 mr-32 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid lg:ml-32 lg:mr-32 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {isLoading ? (
           Array(6)
             .fill(0)
