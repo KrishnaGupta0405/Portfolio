@@ -41,6 +41,14 @@
       "type": "Backend"
     },
     {
+      "name": "Prisma",
+      "type": "Backend"
+    },
+    {
+      "name": "Drizzle",
+      "type": "Backend"
+    },
+    {
       "name": "Firebase",
       "type": "Backend"
     },
@@ -63,6 +71,10 @@
     },
     {
       "name": "MySQL",
+      "type": "Backend"
+    },
+    {
+      "name": "PostgreSql",
       "type": "Backend"
     },
     {

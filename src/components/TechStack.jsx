@@ -6,7 +6,10 @@ import {
   SiReact, SiNextdotjs, SiNodedotjs, SiPostman, SiMongodb,
   SiJavascript, SiTypescript, SiRedux, SiTailwindcss,
   SiGithub, SiFirebase, SiThunderstore, SiSupabase, SiExpress,
-  SiStreamlit, SiCplusplus, SiPython, SiMysql
+  SiStreamlit, SiCplusplus, SiPython, SiMysql,
+  SiPostgresql,
+  SiDrizzle,
+  SiPrisma
 } from 'react-icons/si';
 
 // Mapping tech names to icons and colors
@@ -20,13 +23,16 @@ const iconMap = {
   ThunderClient: { Icon: SiThunderstore, color: 'text-purple-600' },
   MongoDB: { Icon: SiMongodb, color: 'text-green-500' },
   Firebase: { Icon: SiFirebase, color: 'text-amber-500' },
-  Superbase: { Icon: SiSupabase, color: 'text-amber-500' },
+  Superbase: { Icon: SiSupabase, color: 'text-green-500' },
   GitHub: { Icon: SiGithub, color: 'text-slate-800 dark:text-slate-200' },
   Express: { Icon: SiExpress, color: 'text-slate-700 dark:text-slate-300' },
   Streamlit: { Icon: SiStreamlit, color: 'text-pink-500' },
   'C++': { Icon: SiCplusplus, color: 'text-blue-700' },
   Python: { Icon: SiPython, color: 'text-sky-500' },
   MySQL: { Icon: SiMysql, color: 'text-blue-600 dark:text-blue-300' },
+  PostgreSql: { Icon: SiPostgresql, color: 'text-blue-600 dark:text-blue-300' },
+  Drizzle: { Icon: SiDrizzle, color: 'text-blue-600 dark:text-blue-300' },
+  Prisma: { Icon: SiPrisma, color: 'text-blue-600 dark:text-blue-300' },
 };
 
 const container = {
