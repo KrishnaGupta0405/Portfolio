@@ -23,7 +23,7 @@ const iconMap = {
   ThunderClient: { Icon: SiThunderstore, color: 'text-purple-600' },
   MongoDB: { Icon: SiMongodb, color: 'text-green-500' },
   Firebase: { Icon: SiFirebase, color: 'text-amber-500' },
-  Superbase: { Icon: SiSupabase, color: 'text-green-500' },
+  // Superbase: { Icon: SiSupabase, color: 'text-green-500' },
   GitHub: { Icon: SiGithub, color: 'text-slate-800 dark:text-slate-200' },
   Express: { Icon: SiExpress, color: 'text-slate-700 dark:text-slate-300' },
   Streamlit: { Icon: SiStreamlit, color: 'text-pink-500' },

@@ -188,7 +188,7 @@ const Home = () => {
 
       {/* Certifications Section */}
       <Section
-        title="Certifications & Awards"
+        title="Participations"
         emoji="🏅"
         subtitle="Recognitions I’ve received!"
         className="border-t"
